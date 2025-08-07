@@ -39,7 +39,7 @@ stages:
     - models/model.pkl
     - src/model_evaluation.py
     metrics:
-    - reports/metrics.json 
+    - reports/metrics.json
 # params:
 # - dvclive/params.yaml
 # metrics:
@@ -47,3 +47,10 @@ stages:
 # plots:
 # - dvclive/plots/metrics:
 #     x: step
+params:
+- dvclive/params.yaml
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
